@@ -1,0 +1,148 @@
+/**
+ * Mixins
+ */
+#user span {
+  text-transform: uppercase;
+}
+
+.chat-name-section .text-danger {
+  display: none;
+}
+.chat-name-section .has-nickname-taken .text-danger {
+  display: block;
+}
+
+.chat-input-section,
+.chat-box-section {
+  display: none;
+}
+
+#usersOnlineBtn {
+  position: absolute;
+  right: 15px;
+  top: -55px;
+}
+
+#chatBox {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+#chatBox p {
+  position: relative;
+}
+#chatBox p.entry {
+  -webkit-animation: entry linear 0.25s;
+  -moz-animation: entry linear 0.25s;
+  -o-animation: entry linear 0.25s;
+  -ms-animation: entry linear 0.25s;
+  animation: entry linear 0.25s;
+}
+#chatBox p.self {
+  -webkit-animation: entry-right linear 0.25s;
+  -moz-animation: entry-right linear 0.25s;
+  -o-animation: entry-right linear 0.25s;
+  -ms-animation: entry-right linear 0.25s;
+  animation: entry-right linear 0.25s;
+  text-align: right;
+}
+
+#usersBox .modal-body {
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/**
+ * Keyframes
+ */
+@-webkit-keyframes entry {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@-moz-keyframes entry {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@-o-keyframes entry {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@-ms-keyframes entry {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@keyframes entry {
+  from {
+    left: 100%;
+  }
+
+  to {
+    left: 0;
+  }
+}
+@-webkit-keyframes entry-right {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+@-moz-keyframes entry-right {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+@-o-keyframes entry-right {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+@-ms-keyframes entry-right {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
+@keyframes entry-right {
+  from {
+    right: 100%;
+  }
+
+  to {
+    right: 0;
+  }
+}
